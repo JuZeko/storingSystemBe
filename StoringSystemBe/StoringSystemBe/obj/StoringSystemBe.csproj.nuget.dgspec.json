@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rocky\\Desktop\\storingSystemBe\\StoringSystemBe\\StoringSystemBe\\StoringSystemBe.csproj": {}
+    "C:\\Users\\Rocky\\Desktop\\storingSystemBe\\storingSystemBe\\StoringSystemBe\\StoringSystemBe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rocky\\Desktop\\storingSystemBe\\StoringSystemBe\\StoringSystemBe\\StoringSystemBe.csproj": {
+    "C:\\Users\\Rocky\\Desktop\\storingSystemBe\\storingSystemBe\\StoringSystemBe\\StoringSystemBe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rocky\\Desktop\\storingSystemBe\\StoringSystemBe\\StoringSystemBe\\StoringSystemBe.csproj",
+        "projectUniqueName": "C:\\Users\\Rocky\\Desktop\\storingSystemBe\\storingSystemBe\\StoringSystemBe\\StoringSystemBe.csproj",
         "projectName": "StoringSystemBe",
-        "projectPath": "C:\\Users\\Rocky\\Desktop\\storingSystemBe\\StoringSystemBe\\StoringSystemBe\\StoringSystemBe.csproj",
+        "projectPath": "C:\\Users\\Rocky\\Desktop\\storingSystemBe\\storingSystemBe\\StoringSystemBe\\StoringSystemBe.csproj",
         "packagesPath": "C:\\Users\\Rocky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rocky\\Desktop\\storingSystemBe\\StoringSystemBe\\StoringSystemBe\\obj\\",
+        "outputPath": "C:\\Users\\Rocky\\Desktop\\storingSystemBe\\storingSystemBe\\StoringSystemBe\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rocky\\AppData\\Roaming\\NuGet\\NuGet.Config",

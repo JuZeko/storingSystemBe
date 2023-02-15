@@ -11,7 +11,7 @@ namespace StoringSystemBe.Repository
 
         Task<List<Product>?> AddProductAsync(Product product);
 
-        Task<List<Product>?> UpdateProductAsync(Product product);
+        Task<Product> UpdateProductAsync(Product product);
         Task<Product>? GetProduct(int id);
     }
 }

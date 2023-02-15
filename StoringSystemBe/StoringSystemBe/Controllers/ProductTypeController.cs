@@ -31,13 +31,6 @@ namespace ntsystbe.Controllers
             return new OkObjectResult(await _productTypeRepository.AddProductType(productType));
         }
 
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ProductType))]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [HttpDelete("deleteProductType/{id}")]
-        public async Task<ActionResult<ProductType>> UpdateProductAsync(int id)
-        {
-            return new OkObjectResult(await _productTypeRepository.DeleteProductType(id));
-        }
 
     }
 }

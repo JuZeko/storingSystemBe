@@ -45,11 +45,17 @@ namespace StoringSystemBe.Repository
             return dbContract;
         }
 
-        public async Task<List<Product>?> UpdateProductAsync(Product contract)
+        public async Task<Product>? UpdateProductAsync(Product product)
         {
+            var dbClient = await _context.
+                Product.SingleOrDefaultAsync(productElement => productElement.Id == product.Id);
+            if (dbClient == null) return null;
 
+            dbClient.productType = product.productType;
+            dbClient.Name = product.Name;
 
-            return null;
+            await _context.SaveChangesAsync();
+            return dbClient;
         }
 
         public Task<Product>? GetProduct(int id)
