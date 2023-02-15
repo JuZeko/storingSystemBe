@@ -14,9 +14,9 @@ namespace StoringSystemBe.Repository
             _context = context;
         }
 
-        public async Task<List<Product>> GetAllProducts()
+        public async Task<List<Product>> GetAllProducts(string productType)
         {
-            return await _context.Product.ToListAsync();
+            return await _context.Product.Where(product => product.productType == productType).ToListAsync();
         }
 
         public async Task<List<Product>?> DeleteProduct(int id)

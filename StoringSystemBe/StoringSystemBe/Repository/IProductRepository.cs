@@ -5,7 +5,7 @@ namespace StoringSystemBe.Repository
 {
     public interface IProductRepository
     {
-        Task<List<Product>> GetAllProducts();
+        Task<List<Product>> GetAllProducts(string productType);
 
         Task<List<Product>?> DeleteProduct(int id);
 

@@ -20,11 +20,11 @@ namespace ntsystbe.Controllers
 
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Product))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [HttpGet("getAll")]
-        public async Task<ActionResult<List<Product>>> GetAllContractAsync() => new OkObjectResult(await _productRepository.GetAllProducts());
+        [HttpGet("getAll/{productType}")]
+        public async Task<ActionResult<List<Product>>> GetAllContractAsync(string productType) => new OkObjectResult(await _productRepository.GetAllProducts(productType));
 
-        [HttpDelete("delete")]
-        public async Task<List<Product>?> DeleteContract([FromBody] int id) => await _productRepository.DeleteProduct(id);
+        [HttpDelete("delete/{productId}")]
+        public async Task<List<Product>?> DeleteContract(int productId) => await _productRepository.DeleteProduct(productId);
 
         [HttpPut("update")]
         public async Task<List<Product>?> UpdateContract(Product request) => await _productRepository.UpdateProductAsync(request);
